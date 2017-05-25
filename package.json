@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "budo index.js:bundle.js --live  -t [ babelify --extensions .es6 ] -p 3000 --no-debug -- -b bundle-collapser/plugin -g unassertify -g yo-yoify -g uglifyify"
+    "start": "budo index.js:bundle.js --live  -p 3000 --no-debug -- -b bundle-collapser/plugin -g unassertify -g yo-yoify -g uglifyify"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +13,8 @@
     "budo": "^10.0.3",
     "bundle-collapser": "^1.2.1",
     "choo": "^5.1.4",
+    "swal": "^0.1.0",
+    "sweetalert2": "^6.6.4",
     "uglifyify": "^3.0.4",
     "unassertify": "^2.0.4",
     "yo-yoify": "^3.7.0"
